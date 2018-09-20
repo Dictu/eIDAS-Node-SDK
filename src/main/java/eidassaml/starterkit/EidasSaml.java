@@ -85,8 +85,8 @@ public class EidasSaml {
 			} catch (IOException e) {
 				throw new ConfigurationException("EidasSaml: Can not init Templateloader. SAML Message will not build correctly!",e);
 			}
-			Security.addProvider(new BouncyCastleProvider());
-			org.apache.xml.security.algorithms.JCEMapper.setProviderId("BC");
+//			Security.addProvider(new BouncyCastleProvider());
+//			org.apache.xml.security.algorithms.JCEMapper.setProviderId("BC");
 			isInit=true;
 		}
 	}

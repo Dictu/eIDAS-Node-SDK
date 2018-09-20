@@ -26,6 +26,8 @@ import java.util.Map;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 
+import java.security.Security;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.junit.Before;
 import org.junit.Test;
 import org.opensaml.xml.ConfigurationException;
@@ -72,6 +74,7 @@ public class TestEidasSaml {
 	@Before
 	public void setUp() throws Exception {
 		EidasSaml.Init();
+		Security.addProvider(new BouncyCastleProvider());
 	}
 
 	@Test
