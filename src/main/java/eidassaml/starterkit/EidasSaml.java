@@ -21,7 +21,6 @@ package eidassaml.starterkit;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.Security;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -38,7 +37,6 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.opensaml.DefaultBootstrap;
 import org.opensaml.xml.ConfigurationException;
 import org.opensaml.xml.encryption.EncryptionException;
